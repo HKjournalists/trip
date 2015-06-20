@@ -1,0 +1,30 @@
+package com.otrip.dao.trip.impl;
+
+import java.util.List;
+
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Component;
+
+import com.otrip.dao.GenericHibernateDao;
+import com.otrip.dao.trip.ImageDao;
+import com.otrip.domain.system.OtImage;
+
+@Component("imageDao")
+public class ImageDaoImpl extends GenericHibernateDao<OtImage, String> implements ImageDao{
+
+	@Override
+	public List<OtImage> queryOtActiDestinations(OtImage otImage)
+			throws Exception {
+		StringBuffer queryHql=new StringBuffer(" select ad from OtImage ad where 1=1 ");
+		if(otImage!=null)
+		{
+			if(StringUtils.isNotBlank(otImage.getFsObjId()))
+			{
+				queryHql.append(" and ad.fsObjId = '"+otImage.getFsObjId()+"'");
+			}
+		}
+		return super.find(queryHql.toString());
+	}
+	
+	
+}

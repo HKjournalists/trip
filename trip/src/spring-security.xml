@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<beans:beans xmlns="http://www.springframework.org/schema/security"   
+    xmlns:beans="http://www.springframework.org/schema/beans"   
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd   
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd">  
+        
+
+
+		<!-- SpringSecurity过滤器组,此处的ID必须命名为“springSecurityFilterChain” -->
+		<!-- anonymousProcessingFilter,去除没有权限添加匿名用户，放在rememberMeProcessingFilter只后-->
+		<!-- sessionManagementFilter,  实现session的并发配置放在anonymousProcessingFilter之前 -->
+        <beans:bean id="springSecurityFilterChain" class="org.springframework.security.web.FilterChainProxy">
+        	<beans:constructor-arg>
+        		<beans:list>
+        			<filter-chain pattern="/plug/**" filters="none"  />
+        			<filter-chain pattern="/images/**" filters="none"  />
+        			<filter-chain pattern="/js/**" filters="none"  />
+        			<filter-chain pattern="/css/**" filters="none"  />
+        			<filter-chain pattern="/pages/general/**" filters="none"  />
+        			<filter-chain pattern="/pages/login.jsp" filters="none"  />
+        			<filter-chain pattern="/login.html" filters="none"  />
+        			<filter-chain pattern="/logout.html" filters="none"  />
+        			<filter-chain pattern="/error.html" filters="none"  />
+        			<filter-chain pattern="/access_denied.html" filters="none"  />
+        			<filter-chain pattern="/exception.html" filters="none"  />
+        			
+        			<filter-chain pattern="/**" filters="
+        			channelProcessingFilter,  
+           			concourrentSessionFilter,  
+           			securityContextPersistenceFilter,  
+           			logoutFilter,  
+           			usernamePasswordProcessingFilter, 
+           			sessionManagementFilter,
+           			rememberMeProcessingFilter,
+           			exceptionTranslationFilter,  
+           			filterSecurityInterceptor
+        			"  />
+		         </beans:list>
+        	</beans:constructor-arg>
+		 </beans:bean>
+		 
+		 <!-- channelProcessingFilter: 常用来将某些HTTP协议的URL重定向到HTTPS协议  -->
+		 <beans:bean id="channelProcessingFilter" class="org.springframework.security.web.access.channel.ChannelProcessingFilter">  
+		    <beans:property name="channelDecisionManager" ref="channelDecisionManager" />  
+		    <beans:property name="securityMetadataSource">
+		        <filter-security-metadata-source request-matcher="ant">  
+		            <!-- 
+		            <security:intercept-url pattern="/just/test" access="REQUIRES_SECURE_CHANNEL" /> 
+		            -->  
+		            <intercept-url pattern="/**" access="ANY_CHANNEL" />  
+		        </filter-security-metadata-source>  
+		    </beans:property>  
+		</beans:bean>
+		
+		<beans:bean id="channelDecisionManager"  class="org.springframework.security.web.access.channel.ChannelDecisionManagerImpl">  
+		    <beans:property name="channelProcessors">  
+		    	<beans:list>
+		    		<beans:ref local="secureChannelProcessor" />  
+		            <beans:ref local="insecureChannelProcessor" />  
+		    	</beans:list>
+		    </beans:property>  
+		</beans:bean>  
+		  
+		<beans:bean id="secureChannelProcessor" class="org.springframework.security.web.access.channel.SecureChannelProcessor" />  
+		<beans:bean id="insecureChannelProcessor" class="org.springframework.security.web.access.channel.InsecureChannelProcessor" />
+		
+		<!-- 配置Session过期后重定向的地址，expiredUrl为session过期后的重定向地址 -->
+		<!-- concourrentSessionFilter:HttpSession并发过滤器  -->   
+		<beans:bean id="concourrentSessionFilter" class="org.springframework.security.web.session.ConcurrentSessionFilter">  
+		    <beans:property name="sessionRegistry" ref="sessionRegistry" />  
+		    <beans:property name="expiredUrl" value="/login.html" /> 
+		    <beans:property name="logoutHandlers">
+		    	<beans:list>
+		    		<beans:ref bean="logoutHandler"/>
+		    	</beans:list>
+		    </beans:property>  
+		</beans:bean>
+		
+		<!-- 登入后重新生成一个session防止伪造攻击 -->
+		<beans:bean id="sessionManagementFilter" class="com.otrip.security.OtripSessionManagementFilter">  
+		    <beans:constructor-arg name="securityContextRepository" ref="securityContextRepository" />
+		    <beans:property name="sessionAuthenticationStrategy" ref="sas"/>  
+		</beans:bean> 
+		
+		
+		<beans:bean id="sessionRegistry" class="org.springframework.security.core.session.SessionRegistryImpl" /> 					
+        <beans:bean id="sas" class="org.springframework.security.web.authentication.session.ConcurrentSessionControlAuthenticationStrategy">  
+		    <beans:constructor-arg index="0" ref="sessionRegistry" />
+		    <beans:property name="maximumSessions" value="1" />  
+		    <beans:property name="exceptionIfMaximumExceeded" value="false" />
+		</beans:bean> 
+		
+		<!-- securityContextPersistenceFilter:获取或存储一个SecurityContext  -->
+		<beans:bean id="securityContextPersistenceFilter" class="org.springframework.security.web.context.SecurityContextPersistenceFilter" >
+			<beans:property name="securityContextRepository" ref="securityContextRepository" />
+        </beans:bean>
+        
+        <beans:bean id="securityContextRepository" class="org.springframework.security.web.context.HttpSessionSecurityContextRepository">
+        	<beans:property name="allowSessionCreation" value="true"/>
+        	<beans:property name="disableUrlRewriting" value="false"/>
+        </beans:bean>
+        
+        <!-- logoutFilter:监控一个实现退出功能的URL  -->
+        <beans:bean id="logoutFilter" class="org.springframework.security.web.authentication.logout.LogoutFilter">  
+		    <beans:constructor-arg index="0" value="/login.html" />   <!-- 退出后重定向 -->  
+		    <beans:constructor-arg index="1">
+		        <beans:array>  
+		            <beans:ref local="logoutHandler" />  
+		            <beans:ref local="rememberMeServices" />  
+		        </beans:array>  
+		    </beans:constructor-arg>  
+		    <beans:property name="filterProcessesUrl" value="/logout.html"/> <!-- 监控的URL -->  
+		</beans:bean>  
+		  
+		<!-- 这个Bean注入到logoutFilter中去，它实际负责最后的扫尾工作，如把HttpSession实例删除 -->  
+		<beans:bean id="logoutHandler" class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler">  
+		    <beans:property name="invalidateHttpSession" value="true" />  
+		</beans:bean> 
+		
+		<!-- usernamePasswordProcessingFilter:处理用户登录请求 -->
+		<beans:bean id="usernamePasswordProcessingFilter" class="com.otrip.security.UserAuthenticationExtendFilter">  
+		    <beans:property name="usernameParameter" value="username" />  
+        	<beans:property name="passwordParameter" value="password" />  
+        	<!-- <beans:property name="validateCodeParameter" value="validateCode" />   -->
+        	<beans:property name="openValidateCode" value="false" />
+        	<beans:property name="filterProcessesUrl" value="/login_validate.html"></beans:property> 
+        	<beans:property name="authenticationSuccessHandler"  ref="loginLogAuthenticationSuccessHandler"></beans:property> 
+        	<beans:property name="authenticationFailureHandler" ref="simpleUrlAuthenticationFailureHandler"></beans:property> 
+        	<beans:property name="authenticationManager" ref="authenticationManager"></beans:property>  
+		    <beans:property name="rememberMeServices" ref="rememberMeServices"/>  
+		    <beans:property name="sessionAuthenticationStrategy" ref="sas" />   
+		</beans:bean>
+		
+		<beans:bean id="loginLogAuthenticationSuccessHandler" class="org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler"> 
+        	<beans:property name="defaultTargetUrl" value="/index.html"></beans:property> 
+    	</beans:bean> 
+    	
+    	<!-- 如果放开采用失败后，useForward的方式进入重新加载登入页面将会出错 -->
+    	<beans:bean id="simpleUrlAuthenticationFailureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler"> 
+        	<beans:property name="defaultFailureUrl" value="/login.html?error=true"></beans:property> 
+        	<!-- <beans:property name="useForward" value="true" /> -->
+    	</beans:bean>  
+    	
+    	<!-- rememberMeProcessingFilter: 实现"记住我"功能  -->
+		<beans:bean id="rememberMeProcessingFilter" class="org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter">  
+		    <beans:property name="rememberMeServices" ref="rememberMeServices"/>  
+		    <beans:property name="authenticationManager" ref="authenticationManager" />  
+		</beans:bean>  
+		  
+		<beans:bean id="rememberMeServices" class="org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices">  
+		    <beans:property name="key" value="182301IEKO1L73C181891TLTKABCNKA1956A7G9UPQXN" />    <!-- KEY 用于加密 两个一定要相同 -->  
+		    <beans:property name="parameter" value="_remember_me" />  
+		    <beans:property name="tokenValiditySeconds" value="7200" />  
+		    <beans:property name="tokenRepository" ref="inMemoryTokenRepository" />  
+		    <!-- 下面就是我自己实现的UserDetailsService 我给了alias "hibernateUserDetailsService" -->  
+		    <beans:property name="userDetailsService" ref="otripUserDetailService" />  
+		</beans:bean>  
+		  
+		<beans:bean id="rememberMeAuthenticationProvider"  
+		    class="org.springframework.security.authentication.RememberMeAuthenticationProvider">  
+		    <beans:property name="key" value="182301IEKO1L73C181891TLTKABCNKA1956A7G9UPQXN" /> <!-- KEY 用于加密 两个一定要相同 -->  
+		</beans:bean>  
+		  
+		<beans:bean id="inMemoryTokenRepository" class="org.springframework.security.web.authentication.rememberme.InMemoryTokenRepositoryImpl" />
+				
+		<!-- anonymousProcessingFilter:如果用户不能通过验证则给添加一个匿名用户的权限  -->
+		<beans:bean id="anonymousProcessingFilter" class="org.springframework.security.web.authentication.AnonymousAuthenticationFilter">  
+		    <beans:property name="userAttribute" value="anonymousUser,AUTH_ANONYMOUS"/>  
+		    <beans:property name="key" value="BF93JFJ091N00Q7HF"/>  
+		</beans:bean> 
+
+		
+		<!-- exceptionTranslationFilter: 验证通不过？没有访问权限？这个Filter决定如果出现异常了到底应该这么办。 -->
+		<!-- <beans:bean id="exceptionTranslationFilter" class="org.springframework.security.web.access.ExceptionTranslationFilter">   -->
+		<beans:bean id="exceptionTranslationFilter" class="com.otrip.security.OtripManagerExceptionTranslationFilter">  
+		    <beans:property name="authenticationEntryPoint" ref="authenticationEntryPoint" />  
+		    <beans:property name="accessDeniedHandler" ref="accessDeniedHandler" />  
+		</beans:bean> 
+		  
+		<beans:bean id="authenticationEntryPoint" class="org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint">  
+		    <beans:property name="useForward" value="false" />
+		    <beans:property name="loginFormUrl" value="/login.html" />  
+		</beans:bean>  
+		
+		<!-- 拒绝访问的处理 -->
+        <beans:bean id="accessDeniedHandler" class="com.otrip.security.OtripAccessDeniedHandlerImpl">  
+			<beans:property name="accessDeniedUrl" value="/access_denied.html" />  
+  		</beans:bean>
+		
+		<!-- filterSecurityInterceptor:核心过滤器的最后一个。它完成最终的授权判断  -->
+		<!-- 验证配置，认证管理器，实现用户认证的入口，主要实现UserDetailService接口即可 -->
+		<beans:bean id="filterSecurityInterceptor" class="com.otrip.security.OtripFilterSecurityInterceptor">
+			<beans:property name="authenticationManager" ref="authenticationManager"/>
+			<beans:property name="accessDecisionManager" ref="otripAccessDecisionManagerBean"/>
+			<beans:property name="securityMetadataSource" ref="securityMetadataSource"/>
+		</beans:bean>
+		
+		<!-- 对认证时候出现的用户不存在异常进行显示 -->
+		<beans:bean id="authenticationManager" class="org.springframework.security.authentication.ProviderManager">  
+		    <beans:property name="authenticationEventPublisher" ref="defaultAuthEventPublisher"/>  
+		    <beans:property name="providers">  
+		        <beans:list>  
+		            <beans:ref local="daoAuthenticationProvider"/>  
+		            <beans:ref local="anonymousAuthenticationProvider"/>  
+		            <beans:ref local="rememberMeAuthenticationProvider"/>  
+		        </beans:list>  
+		    </beans:property>  
+		</beans:bean>
+		
+		<beans:bean id="defaultAuthEventPublisher" class="org.springframework.security.authentication.DefaultAuthenticationEventPublisher"/>
+		
+		<!--  可以实现密码和用户名的MD5加密认证 -->
+		<beans:bean id="daoAuthenticationProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider" >
+			<beans:property name="userDetailsService" ref="otripUserDetailService"></beans:property>
+			<beans:property name="hideUserNotFoundExceptions" value="false"></beans:property>
+			<!-- <property name="passwordEncoder" ref="md5PasswordEncoder"/>   -->
+		</beans:bean>
+		
+		<!-- 匿名用用户 -->
+		<beans:bean id="anonymousAuthenticationProvider" class="org.springframework.security.authentication.AnonymousAuthenticationProvider">  
+		    <beans:property name="key" value="BF93JFJ091N00Q7HF" />  
+		</beans:bean>
+		
+		<!-- 数据库中读取用户的信息，包括权限，过期和是否锁定 -->
+		<beans:bean id="otripUserDetailService" class="com.otrip.security.OtripUserDetailService"> </beans:bean>
+		
+		<!-- 反问决策器，决定某个用户具有的某个角色，是否有足够的权限去访问某个资源 -->
+	    <beans:bean id="otripAccessDecisionManagerBean" class="com.otrip.security.OtripAccessDecisionManager">
+	    	<!-- 是否允许所有的投票者弃权,如果为false，表示如果所有的投票者弃权，就禁止访问 -->  
+        	<beans:property name="allowIfAllAbstainDecisions" value="false" />  
+	    	<beans:property name="decisionVoters">
+				<beans:list>
+					<!-- RoleVoter默认角色名称都要以ROLE_开头，否则不会被计入权限控制，如果要修改前缀，可以通过对rolePrefix属性进行修改 -->  
+					<beans:bean class="org.springframework.security.access.vote.RoleVoter">
+						<beans:property name="rolePrefix" value="AUTH_" />
+					</beans:bean>
+					<beans:ref bean="expressionVoter"/>  
+					<beans:bean class="org.springframework.security.access.vote.AuthenticatedVoter" />
+				</beans:list>
+			</beans:property>
+	    </beans:bean>
+	    
+	    <!-- 授权时候进行异常的捕获 -->
+	    <beans:bean id="expressionHandler" class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler" />  
+  
+		<beans:bean id="expressionVoter" class="org.springframework.security.web.access.expression.WebExpressionVoter" >  
+		    <beans:property name="expressionHandler" ref="expressionHandler"/>  
+		</beans:bean>
+	    
+        <!-- 资源数据定义，将所有的资源和权限对应关系建立起来，即定义某一资源可以被那些角色访问 -->
+        <beans:bean id="securityMetadataSource" class="com.otrip.security.OtripInvocationSecurityMetadataSource" >
+        	<beans:constructor-arg ref="resourceService"/>
+        </beans:bean>
+  		
+        <!-- oggerListener是一个可选项，它和我们前面配置的Bean或者过滤器没有关系，只是监听系统的一些事件（实现了ApplicationListener监听接口），被它监听的事件包括AuthenticationCredentialsNotFoundEvent事件，AuthorizationFailureEvent事件，AuthorizedEvent事件，PublicInvocationEvent事件 -->
+        <beans:bean id="loggerListener" class="org.springframework.security.authentication.event.LoggerListener"/>
+        
+</beans:beans>

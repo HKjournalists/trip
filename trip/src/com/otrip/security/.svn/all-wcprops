@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security
+END
+OtripInvocationSecurityMetadataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security/OtripInvocationSecurityMetadataSource.java
+END
+OtripSessionManagementFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security/OtripSessionManagementFilter.java
+END
+SecuritySessionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security/SecuritySessionListener.java
+END
+OtripAccessDecisionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security/OtripAccessDecisionManager.java
+END
+OtripFilterSecurityInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security/OtripFilterSecurityInterceptor.java
+END
+OtripAccessDeniedHandlerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security/OtripAccessDeniedHandlerImpl.java
+END
+OtripUserDetailService.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security/OtripUserDetailService.java
+END
+UserAuthenticationExtendFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security/UserAuthenticationExtendFilter.java
+END
+LoginUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security/LoginUser.java
+END
+OtripManagerExceptionTranslationFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security/OtripManagerExceptionTranslationFilter.java
+END
+LoginUserHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/security/LoginUserHelper.java
+END

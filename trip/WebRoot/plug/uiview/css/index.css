@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+.col-md-12{
+	clear:both;
+	width:100%;
+	margin-bottom:6px
+}
+
+.col-md-12 > .col-md-4{
+	float:left;
+	width:390px;
+	border:1px #ccc solid;
+	margin-bottom:10px;
+}
+.col-middle{
+	margin:0 12px;
+	}
+.col-md-12 > .col-md-6{
+	float:left;
+	width:590px;
+	border:1px #ccc solid;
+	margin-bottom:10px;
+}
+h3.title{
+	color:#0068b7;
+	font-weight:normal;
+	padding:5px 0;
+	border-bottom:#6daaea solid 2px;
+}
+h4{
+	background:url(../images/index-protal-bg.jpg) repeat-x #006ab7;
+	height:30px
+}
+h4 > span{
+	background-color:#fff;
+	margin:4px 0 0 15px;
+	padding:4px 10px;
+	display:inline-block;
+	-webkit-border-radius: 4px 4px 0 0;
+	   -moz-border-radius: 4px 4px 0 0;
+	        border-radius: 4px 4px 0 0;
+}
+h4 > span.disable{
+	background-color:transparent;
+	color:#fff;
+	font-weight:normal;
+	cursor:pointer
+}
+.col-md-4 > ul,
+.col-md-6 > ul{
+	list-style-image:url(../images/dask.jpg);
+	padding-left:25px;
+	margin:15px 10px
+	}
+.col-md-4 > ul > li,
+.col-md-6 > ul > li{
+	padding:4px 0;
+	}
+
+.pic{
+	margin:3px;
+	height:360px;
+	background-color:#eee;
+	overflow:hidden
+}
+.date{
+	height:40px;
+	padding:5px 0 5px 5px;
+}

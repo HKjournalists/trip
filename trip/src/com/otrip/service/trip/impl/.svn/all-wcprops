@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/service/trip/impl
+END
+ActiDayServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/service/trip/impl/ActiDayServiceImpl.java
+END
+ActiInfoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/service/trip/impl/ActiInfoServiceImpl.java
+END
+DestinationTypeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/service/trip/impl/DestinationTypeServiceImpl.java
+END
+TimePriceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/service/trip/impl/TimePriceServiceImpl.java
+END
+FavoriteServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/service/trip/impl/FavoriteServiceImpl.java
+END
+DestinationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/trip/impl/DestinationServiceImpl.java
+END
+ActiTypeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/service/trip/impl/ActiTypeServiceImpl.java
+END

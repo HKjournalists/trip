@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/domain/airport
+END
+OtMeetAirport.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/domain/airport/OtMeetAirport.java
+END
+OtMeetAirportOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/domain/airport/OtMeetAirportOrder.java
+END
+OtMeetAirportDiscuss.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/domain/airport/OtMeetAirportDiscuss.java
+END
+OtOrderPassenger.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/domain/airport/OtOrderPassenger.java
+END

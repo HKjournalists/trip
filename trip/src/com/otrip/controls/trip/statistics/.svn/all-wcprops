@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/controls/trip/statistics
+END
+CommentController.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/controls/trip/statistics/CommentController.java
+END
+PraiseController.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/controls/trip/statistics/PraiseController.java
+END
+FavouriteController.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/controls/trip/statistics/FavouriteController.java
+END

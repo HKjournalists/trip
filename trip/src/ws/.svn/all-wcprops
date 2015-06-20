@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/o2lx/!svn/ver/55/trip/src/ws
+END
+spring-ws-acti.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/o2lx/!svn/ver/55/trip/src/ws/spring-ws-acti.xml
+END
+spring-ws-centre.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/o2lx/!svn/ver/55/trip/src/ws/spring-ws-centre.xml
+END
+spring-ws-user.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/o2lx/!svn/ver/55/trip/src/ws/spring-ws-user.xml
+END
+spring-ws-access.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/o2lx/!svn/ver/55/trip/src/ws/spring-ws-access.xml
+END

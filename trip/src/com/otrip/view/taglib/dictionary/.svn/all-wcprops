@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/view/taglib/dictionary
+END
+SelectDictionaryValueByTypeSign.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/view/taglib/dictionary/SelectDictionaryValueByTypeSign.java
+END
+ViewDictionaryTypeNameTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/view/taglib/dictionary/ViewDictionaryTypeNameTag.java
+END
+SelectAllDictionaryTypeIdAndNameTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/view/taglib/dictionary/SelectAllDictionaryTypeIdAndNameTag.java
+END
+ViewDictionaryNameTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/view/taglib/dictionary/ViewDictionaryNameTag.java
+END

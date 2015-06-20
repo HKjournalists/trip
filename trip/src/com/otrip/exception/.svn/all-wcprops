@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/exception
+END
+NoSuchFieldException.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/exception/NoSuchFieldException.java
+END
+ValidateCodeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/exception/ValidateCodeException.java
+END
+ExceptionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/exception/ExceptionHandler.java
+END
+CustomGenericException.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/exception/CustomGenericException.java
+END
+MethodErrorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/exception/MethodErrorException.java
+END

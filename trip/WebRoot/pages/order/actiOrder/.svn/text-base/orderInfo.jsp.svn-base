@@ -1,0 +1,81 @@
+<%@include file="../../general/header.jsp" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="${otapp}/plug/jquery-easyui/themes/default/easyui.css" /> 
+  <link rel="stylesheet" type="text/css" href="${otapp}/plug/jquery-easyui/themes/icon.css" />
+  <link rel="stylesheet" type="text/css"  href="${otapp}/plug/jquery-easyui/demo/demo.css " />
+  <link rel="stylesheet" type="text/css"  href="${otapp}/plug/jquery-easyui/demo/dlg.css " />
+   <script type="text/javascript" src="${otapp}/plug/jquery-easyui/jquery.min.js"></script>
+  <script type="text/javascript" src="${otapp}/plug/jquery-easyui/jquery.easyui.min.js"></script>
+  <script type="text/javascript" src="${otapp}/plug/jquery-easyui/plugins/jquery.form.js"></script>
+  <link href="${otapp}/plug/eXtremeComponents/script/ecside_simple.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" type="text/css" href="${otapp}/css/self/common-form.css" /> 
+ <script type="text/javascript" src="${otapp}/plug/jquery-easyui/locale/easyui-lang-zh_CN.js"></script>
+ <script type="text/javascript" src="${otapp}/plug/upload/ajaxfileupload.js"></script>
+ 
+ <script type="text/javascript">
+ 	$(document).ready(function(){
+ 		$('#tab').datagrid({
+ 			title:'\u8ba2\u5355\u4fe1\u606f',
+ 			height:340,
+ 			url:"",
+ 			method:"POST",
+ 			queryParams:{},
+ 			idFile:"ID",
+ 			striped:true,
+ 			fitColumns:true,
+ 			singleSelect:false,
+ 			rownumbers:true,
+ 			pagination:false,
+ 			nowrap:false,
+ 			pageSize:10,
+ 			pageList:[10,20,50,100],
+ 			showFooter:true,
+ 			toolbar: "#tool",
+ 			columns:[[
+ 			          {filed:'',checkbox:true},
+ 			          {filed:"orderId",title:"\u8ba2\u5355\u7f16\u53f7",width:150,align:'left'},
+ 			          {filed:"orderState",title:"\u8ba2\u5355\u72b6\u6001",width:50,align:'left'},
+ 			          {filed:"orderTime",title:"\u8ba2\u5355\u65f6\u95f4",width:50,align:'left'},
+ 			          {filed:"orderMoney",title:"\u8ba2\u5355\u91d1\u989d",width:50,align:'left'},
+ 			          {filed:"orderPrice",title:"\u8ba2\u5355\u62a5\u4ef7",width:50,align:'left'},
+ 			          {filed:"orderRates",title:"\u8ba2\u5355\u6298\u6263",width:50,align:'left'},
+ 			          {filed:"orderCounts",title:"\u8ba2\u5355\u4eba\u6570",width:50,align:'left'},
+ 			          {filed:"orderAccumulate",title:"\u7d2f\u8ba1\u4eba\u6b21",width:50,align:'left'},
+ 			          {filed:"supplyNo",title:"\u4f9b\u5e94\u5546\u7f16\u53f7",width:150,align:'left'}
+ 			          ]]
+ 		});
+ 	})
+ </script>
+ 
+  <style type="text/css">
+        input{ border:none; border-bottom:1px solid black;}
+    </style>
+  </head>
+  
+  
+  <body>
+  
+  	<div id="tool">
+  			<tdiv border="0" cellpadding="0" cellspacing="0" width="100%">
+  				<tr>
+  					<td style="padding-left:2px">
+  					<a href="#" class="easyui-linkbutton" id="id_add" iconcls="icon-add"  plain="true" onclick="add_dg();" ><spring:message code="trip.manager.configure.manager.activity.price.add.addPrice" /></a>
+                	<a href="#" class="easyui-linkbutton" id="id_edit" iconCls="icon-edit"  plain="true" onclick="edit_dg();"><spring:message code="trip.manager.configure.manager.activity.price.add.modifyPrice" /></a>
+                	<a href="#" class="easyui-linkbutton" id="id_cancel " onclick="delete_dg();"  iconcls="icon-cancel" plain="true"><spring:message code="trip.manager.configure.manager.activity.price.add.delPrice" /></a>
+  					</td>
+  					
+  				</tr>
+  			</div>
+  		</div>
+  <div id="tab">
+  		
+  		
+  			
+  		</div>
+  		
+  </body>
+ </html>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/domain/order
+END
+OtCouponPart.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/domain/order/OtCouponPart.java
+END
+OtCouponGather.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/domain/order/OtCouponGather.java
+END
+OtOwnerCoupon.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/domain/order/OtOwnerCoupon.java
+END

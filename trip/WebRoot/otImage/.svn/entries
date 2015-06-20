@@ -1,0 +1,50 @@
+10
+
+dir
+58
+http://code.taobao.org/svn/o2lx/trip/WebRoot/otImage
+http://code.taobao.org/svn/o2lx
+
+
+
+2015-06-09T11:45:46.590834Z
+57
+ejbkiller3
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e96268a-7aa5-4fc5-93bc-f448dcc94246
+
+
+
+
+
+
+0
+
+acti_days
+dir
+
+acti_icon
+dir
+
+acti_info 
+dir
+
+acti_type
+dir
+
+default
+dir
+

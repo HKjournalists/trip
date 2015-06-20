@@ -1,0 +1,131 @@
+小钟，
+
+
+公网IP 是： 121.42.206.235  
+账号是root :密码是O2lx2046     (首字母大写)?
+
+
+
+
+tomcat 安装路径 ：  /home/dawson/apache-tomcat-8.0.20   
+访问地址： http://121.42.206.235:8080/?
+
+
+mysql 
+121.42.206.235  3306?
+root/o2lx2046  (首字母小写)
+数据库 trip 
+
+
+小钟发布上去看看，此外黄磊的也把代码发给我看看。
+
+
+
+
+dawson chmod -R 777 *
+本文原始链接：http://www.jbxue.com/LINUXjishu/22205.html
+
+http://121.42.206.235:8080/otrip/login.html
+
+/home/dawson/apache-tomcat-8.0.20/webapps
+
+cp /home/dawson/otrip.war /home/dawson/apache-tomcat-8.0.20/webapps
+
+rm -rf /var/lock/subsys/mysql
+
+service mysql start
+
+kill -9 进程号 
+
+不同linux会有所不同,一般在/usr/local/mysql 或者你用 ps -aux|grep myql 这个命令应该可以看到
+
+UPDATE user SET Password=PASSWORD(’newpassword’) where USER=’root’; 
+
+
+卸载mysql数据库：
+rpm -e --nodeps MySQL-server-5.6.23-1.el7.x86_64
+rpm -e --nodeps MySQL-client-5.6.23-1.el7.x86_64
+rpm -e --nodeps MySQL-devel-5.6.23-1.el7.x86_64
+
+#rpm -q -a
+
+
+rpm -qa | grep -i mysql检查是否有安装mysql的
+MySQL-5.6.23-1.el7.x86_64.rpm-bundle.tar  MySQL-devel-5.6.23-1.el7.x86_64.rpm     MySQL-server-5.6.23-1.el7.x86_64.rpm  MySQL-shared-compat-5.6.23-1.el7.x86_64.rpm
+MySQL-client-5.6.23-1.el7.x86_64.rpm      MySQL-embedded-5.6.23-1.el7.x86_64.rpm  MySQL-shared-5.6.23-1.el7.x86_64.rpm  MySQL-test-5.6.23-1.el7.x86_64.rpm
+
+rpm -ivh MySQL-server-5.6.23-1.el7.x86_64.rpm
+rpm -ivh MySQL-devel-5.6.23-1.el7.x86_64.rpm
+rpm -ivh MySQL-client-5.6.23-1.el7.x86_64.rpm
+
+mysql -u root -p -S /var/lib/mysql/mysql.sock
+
+/etc/init.d/mysqld stop
+
+rpm -qa | grep mysql
+
+
+rpm -e MySQL-server-5.6.23-1.el7.x86_64
+rpm -e MySQL-devel-5.6.23-1.el7.x86_64
+rpm -e MySQL-client-5.6.23-1.el7.x86_64
+
+-rwxrwxrwx 1 root root  239288320 Mar 11 22:17 MySQL-5.6.23-1.el7.x86_64.rpm-bundle.tar
+-rwxrwxrwx 1 7155 wheel  19915564 Jan 20 15:19 MySQL-client-5.6.23-1.el7.x86_64.rpm
+-rwxrwxrwx 1 7155 wheel   3532944 Jan 20 15:19 MySQL-devel-5.6.23-1.el7.x86_64.rpm
+-rwxrwxrwx 1 7155 wheel  91911604 Jan 20 15:19 MySQL-embedded-5.6.23-1.el7.x86_64.rpm
+-rwxrwxrwx 1 7155 wheel  60429376 Jan 20 15:20 MySQL-server-5.6.23-1.el7.x86_64.rpm
+-rwxrwxrwx 1 7155 wheel   2096580 Jan 20 15:21 MySQL-shared-5.6.23-1.el7.x86_64.rpm
+-rwxrwxrwx 1 7155 wheel   2299532 Jan 20 15:21 MySQL-shared-compat-5.6.23-1.el7.x86_64.rpm
+-rwxrwxrwx 1 7155 wheel  59091872 Jan 20 15:21 MySQL-test-5.6.23-1.el7.x86_64.rpm
+
+rpm -ivh MySQL-client-5.6.23-1.el7.x86_64.rpm
+
+/usr/bin/mysqladmin -u root password 123456  
+
+Set password for 'root'@'localhost'=password('')
+本篇文章来源于 Linux公社网站(www.linuxidc.com)  原文链接：http://www.linuxidc.com/Linux/2012-11/74518.htm
+
+
+UPDATE user SET Password=PASSWORD('o2lx2046') where USER='root'; 
+FLUSH PRIVILEGES;
+
+
+/sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT;
+
+mysql -u root -p
+
+grant all privileges on *.* to 'root'@'%' identified by 'root' with grant option;
+
+ create database trip;
+
+grant all PRIVILEGES on trip.* to root@'%' identified by '123456'
+
+ grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option;
+
+
+chown mysql.mysql /data/mysql/
+
+
+
+
+将目录A重命名为B mv A B
+
+chmod -R 775 /u01/app/oracle
+
+
+
+chmod -R 777 /home/dawson/tomcat-8.0.15
+
+
+
+
+SVN账号
+http://code.taobao.org/svn/o2lx/
+zjc1279066525
+zjc123456789
+
+ejbkiller/o2lx2046		--这个黄磊用
+
+ejbkiller2/o2lx2046		--这个曾鹏用
+
+mysql -u root -p linux下进入mysql命令

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/dao/trip
+END
+ClickPraiseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/dao/trip/ClickPraiseDao.java
+END
+ActiDayDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/dao/trip/ActiDayDao.java
+END
+ActiInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/trip/ActiInfoDao.java
+END
+DestinationTypeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/trip/DestinationTypeDao.java
+END
+ImageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/trip/ImageDao.java
+END
+TimePriceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/trip/TimePriceDao.java
+END
+FavoriteDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/dao/trip/FavoriteDao.java
+END
+DestinationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/trip/DestinationDao.java
+END
+CommentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/dao/trip/CommentDao.java
+END
+ActiTypeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/dao/trip/ActiTypeDao.java
+END

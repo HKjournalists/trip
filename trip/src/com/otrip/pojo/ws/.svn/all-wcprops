@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/pojo/ws
+END
+Discuss.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/Discuss.java
+END
+ActiPosition.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/pojo/ws/ActiPosition.java
+END
+ActiCountry.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/ActiCountry.java
+END
+ActiDays.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/ActiDays.java
+END
+Destination.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/Destination.java
+END
+Favorite.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/Favorite.java
+END
+PraiseUsers.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/PraiseUsers.java
+END
+CountryAndType.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/CountryAndType.java
+END
+ActiScenic.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/ActiScenic.java
+END
+MapCountry.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/MapCountry.java
+END
+ActiDetailInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/ActiDetailInfo.java
+END
+ActiInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/ActiInfo.java
+END
+Problems.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/Problems.java
+END
+ActiType.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/pojo/ws/ActiType.java
+END

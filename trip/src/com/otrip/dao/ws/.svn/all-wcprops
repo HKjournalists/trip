@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/ws
+END
+WsDestinationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/ws/WsDestinationDao.java
+END
+WsProblemDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/ws/WsProblemDao.java
+END
+WsDiscussDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/ws/WsDiscussDao.java
+END
+WsServiceClientDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/ws/WsServiceClientDao.java
+END
+WsFavoriteDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/ws/WsFavoriteDao.java
+END
+WsActiClickPraiseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/ws/WsActiClickPraiseDao.java
+END
+WsActiInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/ws/WsActiInfoDao.java
+END
+WsLogLoginDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/ws/WsLogLoginDao.java
+END

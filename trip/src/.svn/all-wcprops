@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/o2lx/!svn/ver/58/trip/src
+END
+spring-dispatcher.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/o2lx/!svn/ver/55/trip/src/spring-dispatcher.xml
+END
+system_db.properties
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/o2lx/!svn/ver/57/trip/src/system_db.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/o2lx/!svn/ver/58/trip/src/log4j.properties
+END
+spring-core.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/o2lx/!svn/ver/55/trip/src/spring-core.xml
+END
+spring-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/o2lx/!svn/ver/55/trip/src/spring-security.xml
+END
+spring-hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/o2lx/!svn/ver/56/trip/src/spring-hibernate.xml
+END
+spring-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/o2lx/!svn/ver/55/trip/src/spring-test.xml
+END
+ValidationMessages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/o2lx/!svn/ver/55/trip/src/ValidationMessages.properties
+END
+extremetable.properties
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/o2lx/!svn/ver/55/trip/src/extremetable.properties
+END
+spring-ws-import.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/o2lx/!svn/ver/55/trip/src/spring-ws-import.xml
+END

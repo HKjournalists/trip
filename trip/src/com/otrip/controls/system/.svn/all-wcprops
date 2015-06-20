@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system
+END
+MenuTypeManagerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system/MenuTypeManagerController.java
+END
+UserManagerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system/UserManagerController.java
+END
+DictionaryTypeController.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system/DictionaryTypeController.java
+END
+MenuManagerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system/MenuManagerController.java
+END
+InterfaceConfiController.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system/InterfaceConfiController.java
+END
+DictionaryValueController.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system/DictionaryValueController.java
+END
+ManagerLoginLogController.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system/ManagerLoginLogController.java
+END
+SystemMainController.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system/SystemMainController.java
+END
+RequiredPathConfigController.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system/RequiredPathConfigController.java
+END
+RoleController.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system/RoleController.java
+END
+TravelLoginLogController.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/controls/system/TravelLoginLogController.java
+END

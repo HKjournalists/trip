@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html
+END
+ToolbarBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/ToolbarBuilder.java
+END
+TableActions.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/TableActions.java
+END
+TableBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/TableBuilder.java
+END
+StatusBarBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/StatusBarBuilder.java
+END
+CellBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/CellBuilder.java
+END
+FormBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/FormBuilder.java
+END
+BuilderUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/BuilderUtils.java
+END
+CalcBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/CalcBuilder.java
+END
+TwoColumnTableLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/TwoColumnTableLayout.java
+END
+ColumnBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/ColumnBuilder.java
+END
+BuilderConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/BuilderConstants.java
+END
+TwoColumnRowLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/TwoColumnRowLayout.java
+END
+RowBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/html/RowBuilder.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/util
+END
+Common.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/util/Common.java
+END
+OtripConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/util/OtripConstants.java
+END
+DomainUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/util/DomainUtil.java
+END
+StringValuedEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/util/StringValuedEnum.java
+END
+String2DateConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/util/String2DateConverter.java
+END

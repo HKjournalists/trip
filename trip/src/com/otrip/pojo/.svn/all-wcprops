@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/pojo
+END
+ActiVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/pojo/ActiVo.java
+END
+PraiseUserVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/pojo/PraiseUserVo.java
+END
+UserFavoriteVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/pojo/UserFavoriteVo.java
+END
+CommentActiVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/pojo/CommentActiVo.java
+END
+FavoriteActiVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/pojo/FavoriteActiVo.java
+END
+PraiseActiVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/pojo/PraiseActiVo.java
+END
+ImageVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/pojo/ImageVo.java
+END

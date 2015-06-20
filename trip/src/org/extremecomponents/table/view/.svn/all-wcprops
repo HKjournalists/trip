@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view
+END
+DefaultStatusBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/DefaultStatusBar.java
+END
+HtmlView.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/HtmlView.java
+END
+LimitToolbar.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/LimitToolbar.java
+END
+LimitView.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/LimitView.java
+END
+CsvView.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/CsvView.java
+END
+DefaultToolbar.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/DefaultToolbar.java
+END
+CompactToolbar.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/CompactToolbar.java
+END
+CompactView.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/CompactView.java
+END
+ExportViewUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/ExportViewUtils.java
+END
+PdfView.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/PdfView.java
+END
+View.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/View.java
+END
+XlsView.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/XlsView.java
+END
+AbstractHtmlView.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/view/AbstractHtmlView.java
+END

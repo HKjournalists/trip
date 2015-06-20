@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/dao/system
+END
+OtImageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/dao/system/OtImageDao.java
+END
+RoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/system/RoleDao.java
+END
+MenuAuthDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/system/MenuAuthDao.java
+END
+MenuTypeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/system/MenuTypeDao.java
+END
+DictionaryValueDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/system/DictionaryValueDao.java
+END
+LoginHistoryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/system/LoginHistoryDao.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/system/UserDao.java
+END
+ResourceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/system/ResourceDao.java
+END
+RoleAuthDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/system/RoleAuthDao.java
+END
+DictionaryTypeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/system/DictionaryTypeDao.java
+END
+UserRoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/system/UserRoleDao.java
+END

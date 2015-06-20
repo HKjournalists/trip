@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/limit
+END
+LimitFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/limit/LimitFactory.java
+END
+Sort.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/limit/Sort.java
+END
+TableLimit.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/limit/TableLimit.java
+END
+TableLimitFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/limit/TableLimitFactory.java
+END
+Limit.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/limit/Limit.java
+END
+FilterSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/limit/FilterSet.java
+END
+Filter.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/limit/Filter.java
+END
+LimitRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/limit/LimitRegistry.java
+END
+ModelLimitFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/limit/ModelLimitFactory.java
+END
+AbstractLimitFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/limit/AbstractLimitFactory.java
+END

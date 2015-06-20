@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xsi:schemaLocation="   
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd   
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd   
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd   
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd   
+       http://www.springframework.org/schema/mvc    
+       http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">
+
+	<mvc:annotation-driven>
+		<mvc:message-converters register-defaults="true">
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<constructor-arg value="UTF-8" />
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	
+	<!--解决web.xml拦截非action路径的问题-->
+    <mvc:default-servlet-handler/>
+	
+	<!-- 实现静态资源过滤不走MVC流程 -->
+	<mvc:resources location="/images/" mapping="/images/**" />  
+    <mvc:resources location="/js/" mapping="/js/**" />  
+    <mvc:resources location="/css/" mapping="/css/**" />  
+    <mvc:resources location="/plug/" mapping="/plug/**" />  
+    
+    <!-- 系统跟访问进入主页配置 -->
+    <!-- <mvc:view-controller path="/" view-name="forward:/index" />   -->
+    <mvc:view-controller path="/" view-name="forward:/index.html" />  
+    
+    <!-- 文件上传的最大限制配置 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
+    	<property name="defaultEncoding" value="utf-8"/> 
+		<property name="maxUploadSize" value="100000000" />
+	</bean>
+	
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />  
+	
+	<!-- 开启controller注解支持 -->
+	<!-- 注：如果base-package=com.otrip 则注解事务不起作用 TODO 读源码 -->
+	<context:component-scan base-package="com.otrip">
+		<context:include-filter type="annotation"  expression="org.springframework.stereotype.Controller" />
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service" />
+	</context:component-scan>
+	
+	<bean  class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">  
+        <property name="mediaTypes">  
+            <map>  
+                <entry key="json" value="application/json" />  
+                <entry key="xml" value="application/xml" />  
+                <entry key="html" value="text/html" />  
+            </map>  
+        </property>  
+        <property name="viewResolvers">  
+            <list>  
+                <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" />  
+                <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">  
+                    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />  
+                    <property name="prefix" value="/pages" />  
+                    <property name="suffix" value=".jsp" />  
+                </bean>  
+            </list>  
+        </property>  
+    </bean>  
+
+	<!-- 对spring支持返回json数据的配置 -->
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" >
+		<property name="messageConverters">
+			<list>  
+				<ref bean="mappingJacksonHttpMessageConverter"/>
+			</list>
+		</property>
+	</bean>
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">  
+	    <property name="messageConverters">  
+	        <list>  
+	        	<ref bean="stringHttpMessageConverter" /> 
+				<ref bean="mappingJacksonHttpMessageConverter"/>
+			</list>
+	    </property>  
+	</bean>
+	<bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+		<property name="supportedMediaTypes">  
+             <list>  
+                 <value>application/json;charset=UTF-8</value>  
+             </list>  
+         </property>  
+	</bean>
+	<bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter" > 
+     <property name = "supportedMediaTypes">    
+          <list>    
+             <value>text/plain;charset=UTF-8</value> 
+          </list>    
+     </property>  
+    </bean> 
+	
+	  
+	<!-- 控制器异常处理 -->
+	
+	<bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="java.lang.Exception">redirect:/error.html</prop>
+				<prop key="java.lang.Throwable">redirect:/error.html</prop>
+			</props>
+		</property>
+		<property name="statusCodes">
+			<props>
+				<prop key="errors/error">500</prop>
+				<prop key="errors/404">404</prop>
+			</props>
+		</property>
+	
+	
+		<!-- 设置日志输出级别，不定义则默认不输出警告等错误日志信息 -->
+		<property name="warnLogCategory" value="DEBUG"></property> 
+		<!-- 默认错误页面，当找不到上面mappings中指定的异常对应视图时，使用本默认配置 -->
+		<property name="defaultErrorView" value="/error.html"></property>
+		<!-- 默认HTTP状态码 -->
+		<property name="defaultStatusCode" value="500"></property>
+	</bean>
+	
+</beans>

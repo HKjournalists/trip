@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/webservice/util
+END
+Permission.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/webservice/util/Permission.java
+END
+WebServiceHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/webservice/util/WebServiceHelper.java
+END
+WebServiceContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/webservice/util/WebServiceContext.java
+END
+WsLoginSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/webservice/util/WsLoginSession.java
+END
+PrincipalParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/webservice/util/PrincipalParameters.java
+END
+ResultJsonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/webservice/util/ResultJsonUtil.java
+END
+WebServiceFaultsEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/webservice/util/WebServiceFaultsEnum.java
+END
+ServiceOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/webservice/util/ServiceOperation.java
+END
+WebServiceFault.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/webservice/util/WebServiceFault.java
+END

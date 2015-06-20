@@ -1,0 +1,7 @@
+package com.otrip.dao.order;
+
+public interface OtActiOrderDao {
+
+	String uid="69f6189d-b9b5-45dc-8bac-a12a8dd6780f 94e84c40-d479-4604-9c65-8e31529ddd03 ac1c3ee9-750a-4a5e-8175-4ee0e0c35d47 bae9604a-9362-4bc3-b9a3-17cdbd6a025f"+
+"43bae892-2596-4192-a905-682a791aea85";
+}

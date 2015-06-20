@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/ws/impl
+END
+WsDestinationDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/ws/impl/WsDestinationDaoImpl.java
+END
+WsProblemDaoimpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/ws/impl/WsProblemDaoimpl.java
+END
+WsDiscussDaoimpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/ws/impl/WsDiscussDaoimpl.java
+END
+WsServiceClientDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/ws/impl/WsServiceClientDaoImpl.java
+END
+WsFavoriteDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/ws/impl/WsFavoriteDaoImpl.java
+END
+WsActiClickPraiseDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/ws/impl/WsActiClickPraiseDaoImpl.java
+END
+WsLogLoginDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/dao/ws/impl/WsLogLoginDaoImpl.java
+END

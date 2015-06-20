@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/service/system/impl
+END
+RoleServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/system/impl/RoleServiceImpl.java
+END
+MenuAuthServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/system/impl/MenuAuthServiceImpl.java
+END
+MenuTypeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/system/impl/MenuTypeServiceImpl.java
+END
+DictionaryValueServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/system/impl/DictionaryValueServiceImpl.java
+END
+ImageServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/service/system/impl/ImageServiceImpl.java
+END
+LoginHistoryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/system/impl/LoginHistoryServiceImpl.java
+END
+UserServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/system/impl/UserServiceImpl.java
+END
+ResourceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/system/impl/ResourceServiceImpl.java
+END
+RoleAuthServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/system/impl/RoleAuthServiceImpl.java
+END
+DictionaryTypeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/system/impl/DictionaryTypeServiceImpl.java
+END
+UserRoleServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/system/impl/UserRoleServiceImpl.java
+END
+AccessServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/service/system/impl/AccessServiceImpl.java
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/view/taglib/trip
+END
+SelectDestinationByParentIdTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/view/taglib/trip/SelectDestinationByParentIdTag.java
+END
+ViewDestinationTypeNameTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/view/taglib/trip/ViewDestinationTypeNameTag.java
+END
+SelectAllDestinationTypeIdAndNameTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/view/taglib/trip/SelectAllDestinationTypeIdAndNameTag.java
+END
+ViewDestinationNameByIdTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/view/taglib/trip/ViewDestinationNameByIdTag.java
+END
+SelectAllActivityTypeIdAndNameTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/view/taglib/trip/SelectAllActivityTypeIdAndNameTag.java
+END
+ViewActivityTypeNameTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/o2lx/!svn/ver/55/trip/src/com/otrip/view/taglib/trip/ViewActivityTypeNameTag.java
+END
+initDestinationNameTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/view/taglib/trip/initDestinationNameTag.java
+END

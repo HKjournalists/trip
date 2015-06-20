@@ -1,0 +1,8 @@
+package com.otrip.dao.order.impl;
+
+import com.otrip.domain.DomainUtils;
+
+public class OtActiOrderDaoImpl {
+
+	
+}

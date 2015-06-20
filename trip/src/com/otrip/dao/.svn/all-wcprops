@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/o2lx/!svn/ver/58/trip/src/com/otrip/dao
+END
+GenericHibernateDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/GenericHibernateDao.java
+END
+IGenericDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/o2lx/!svn/ver/57/trip/src/com/otrip/dao/IGenericDao.java
+END

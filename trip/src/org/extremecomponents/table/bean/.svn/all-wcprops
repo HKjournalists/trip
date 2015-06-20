@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/bean
+END
+TableDefaults.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/bean/TableDefaults.java
+END
+Table.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/bean/Table.java
+END
+RowDefaults.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/bean/RowDefaults.java
+END
+Row.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/bean/Row.java
+END
+ColumnDefaults.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/bean/ColumnDefaults.java
+END
+Attributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/bean/Attributes.java
+END
+Column.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/bean/Column.java
+END
+ExportDefaults.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/bean/ExportDefaults.java
+END
+Export.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/o2lx/!svn/ver/55/trip/src/org/extremecomponents/table/bean/Export.java
+END
